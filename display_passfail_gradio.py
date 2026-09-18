@@ -10,8 +10,8 @@ model = joblib.load("logistic_regression_study_hours_model.pkl")
 def predict_result(study_hours, attendance):
 
     input_data = pd.DataFrame({
-        "Study Hours": [Study Hours],
-        "Attendance": [Attendance]
+        "Study Hours": [study_hours],
+        "Attendance": [attendance]
     })
 
     prediction = model.predict(input_data)[0]
